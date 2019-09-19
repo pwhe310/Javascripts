@@ -1,0 +1,14 @@
+let food = 'pizza';
+console.log(food);
+food = 'cookies';
+console.log(food);
+
+let whatVar = 'hello world';
+console.log(typeof whatVar);
+
+let tenTimesTen = 10;
+tenTimesTen *= 10;
+console.log(tenTimesTen);
+
+let favCity = 'San Franciso';
+console.log(`My favorite city is ${favCity}`);
