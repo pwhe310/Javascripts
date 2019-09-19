@@ -1,0 +1,4 @@
+console.log('hello world'.length);//will come back with 5
+console.log(5 *6);
+console.log('hello ' + 'world');
+console.log('boo i scared you'.toUpperCase());
