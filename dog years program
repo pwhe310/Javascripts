@@ -1,0 +1,23 @@
+//my age now
+let myAge = 17;
+
+//dog age
+let earlyYears = 2;
+
+//storing value 0 right now.change later
+let laterYears = 0;
+let myAgeInDogYears = 0; 
+
+let myName = 'Philip Eskes'
+
+earlyYears *= 10.5;
+
+//min my age and store it in laterYears
+laterYears = myAge - 2;
+//representing dog years for my age
+laterYears *= 4;
+
+//adds erlyYrs + ltrYrs together
+myAgeInDogYears = earlyYears + laterYears;
+
+console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`)
