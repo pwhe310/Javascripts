@@ -1,0 +1,19 @@
+let groceryList = 'pineapple';
+
+switch (groceryList){
+  case 'apple':
+    console.log('One apple is $1.00');
+    break;
+  
+  case 'tomato':
+    console.log('One tomato is $2.50');
+    break
+  
+  case 'pineapple':
+    console.log('One pineapple is $1.75');
+    break;
+    
+  default:
+    console.log('Sorry try agian');
+    break;
+}
