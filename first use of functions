@@ -1,0 +1,27 @@
+//all the functions learned
+function Hello(){
+  console.log('Hello world');
+}
+
+function calWidthHight(height, width){
+  return width * height
+}
+
+function daysRockCliming(totalCost){
+  return totalCost * 5
+}
+
+const FindingArea = (width, height) => {
+  const area = width * height;
+  return area;
+}
+
+const payCheck = billWeekly => billWeekly * 5;
+
+
+//printing the functions out
+Hello();
+console.log(calWidthHight(6,7));
+console.log(daysRockCliming(5));
+console.log(FindingArea(7,4));
+console.log(payCheck(170.5));
