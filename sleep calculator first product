@@ -1,0 +1,59 @@
+function getSleepHours(day){
+  switch(day){
+    case 'monday':
+      return 8;
+      break;
+    case 'tuesday':
+      return 5;
+      break;
+    case 'wesday':
+      return 7;
+      break;
+    case 'thursday':
+      return 6;
+      break;
+    case 'friday':
+      return 8;
+      break;
+    case 'saturday':
+      return 10;
+      break;
+    case 'sunday':
+      return 8;
+      break;
+    default:
+      return 'spelling is wrong please try agian';
+      break
+  }
+}; 
+
+function getActualSleepHours(){
+ const hoursOfSleep = getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday') + getSleepHours('sunday');
+  return hoursOfSleep;
+};
+
+function getIdealSleepHours(){
+  let ideaHours = 9 * 7;
+  return ideaHours;
+}; 
+
+function calculateSleepDebt(){
+  
+  let actualSleepHours = getActualSleepHours();
+  
+  let idealSleepHours = getIdealSleepHours();
+  
+  if(actualSleepHours === idealSleepHours){
+    return console.log('user got the perfect amout of sleep');
+  }else if(actualSleepHours > idealSleepHours){
+    
+    const hoursOver = actualSleepHours - idealSleepHours;
+    return console.log('The user got more sleep then needed. He got ' + hoursOver + ' hour then normal');
+    
+    }else{
+    const lessSleepHours = idealSleepHours - actualSleepHours
+    return console.log('The user should get some rest. The user got ' + lessSleepHours + ' hours less sleep then needed');
+  }
+};
+
+calculateSleepDebt();
