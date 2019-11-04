@@ -1,0 +1,48 @@
+function helloWorld(){
+  const sayHello = 'Hello world';
+  
+  if(sayHello === 'Hello world');{
+    console.log(sayHello);
+  }
+  console.log();
+};
+
+//good practic scoping
+const logSanFran = () =>{
+const city1 = 'London';
+const city2 = 'San Francisco \n';
+//if statement
+if(city2 === 'San Francisco'){
+  console.log(city2);
+}
+};
+
+//scope pullution
+const galaxy = 'the milky way';
+const satellite = 'moon';
+const star = 'north star';
+
+const callNightSky = () =>{
+  const stars = 'cirus';
+  return console.log('Night Sky has' + stars, galaxy, 'and ' + star + '\n');
+};
+
+//block scope
+const blockScope = () =>{
+  const petsName = 'gracie \n';
+  console.log(petsName);
+}
+//console.log(petsName);//will have error + block scope
+//block and scope
+const city = 'New York City'; //goloble var
+
+const logCitySkyline = () =>{
+  const skyScraper = 'empire state building';
+  return console.log('The stars under ' + skyScraper + ' in ' + city + '\n');
+}
+
+helloWorld();
+callNightSky();    //scope pollution
+logSanFran();      //good practic scope
+blockScope();      //block scope
+logCitySkyline();  //block scope/ global var
