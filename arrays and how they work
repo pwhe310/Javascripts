@@ -1,0 +1,22 @@
+const cities = ['Los Angles', 'San Fran', 'New York', 'Boston'];
+
+const randNum = Math.floor(Math.random()*4)
+console.log(cities[randNum]);  //rand acessing array
+
+console.log(cities[2]);  //specificly chosing New York
+
+cities[0] = 'Baltimore';    //changes los angles to Baltimore
+console.log(cities);
+console.log(cities.length);//tell how many arrays there are
+
+cities.push("Seattle");  //added seattle to list of arrays
+console.log(cities);
+
+cities.pop();    //removes seattle from array
+console.log(cities);
+
+cities.shift();    //removes cities[0] from array
+console.log(cities);
+
+const pullingArray = cities.slice(0, 2);
+console.log(pullingArray); //pull array in a section
